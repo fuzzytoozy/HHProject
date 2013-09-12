@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context=".SecondActivity" >
+
+	 <TextView
+        android:id="@+id/textNameHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_hint"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+	 <TextView
+	     android:id="@+id/textName"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_alignTop="@+id/textNameHint"
+	     android:layout_marginLeft="15dp"
+	     android:layout_toRightOf="@+id/textNameHint"
+	     android:background="@drawable/cbutton_3"
+	     android:text="textName"
+	     android:textAppearance="?android:attr/textAppearanceMedium"
+	     android:ems="14"
+	     android:gravity="center" />
+
+	<TextView
+	    android:id="@+id/textGenderHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textNameHint"
+	    android:layout_below="@+id/textName"
+	    android:layout_marginTop="15dp"
+	    android:text="@string/gender_hint"
+	    android:textColor="@android:color/white" />
+
+	<TextView
+	    android:id="@+id/textDateHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@+id/textGender"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@+id/textGender"
+	    android:text="@string/date_hint"
+	    android:textColor="@android:color/white" />
+
+	<TextView
+	    android:id="@+id/textDate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/textPostHint"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/cbutton_3"
+	    android:text="textDate"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/textGender"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textName"
+	    android:layout_alignTop="@+id/textGenderHint"
+	    android:background="@drawable/cbutton_3"
+	    android:text="textGender"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	
+
+	<TextView
+	    android:id="@+id/textPostHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textGender"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="18dp"
+	    android:text="@string/post_hint"
+	    android:textColor="@android:color/white" />
+
+	<TextView
+	    android:id="@+id/textPost"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/textDate"
+	    android:layout_below="@+id/textPostHint"
+	    android:background="@drawable/cbutton_3"
+	    android:gravity="center"
+	    android:text="textPost"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	
+	<TextView
+	    android:id="@+id/textSalaryHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textPost"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/salary_hint"
+	    android:textColor="@android:color/white" />
+	
+	
+	<TextView
+	    android:id="@+id/textSalary"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textSalaryHint"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/cbutton_3"
+	    android:gravity="center"
+	    android:text="textSalary"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/textMailHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textSalary"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/mail_hint"
+	    android:textColor="@android:color/white" />
+
+	<Button
+	    android:id="@+id/textMail"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textSalary"
+	    android:layout_below="@+id/textMailHint"
+	    android:background="@drawable/cbutton_1"
+	    android:gravity="center"
+	    android:text="textMail"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/textPhoneHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textMail"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/phone_hint"
+	    android:textColor="@android:color/white" />
+
+	<Button
+	    android:id="@+id/textPhone"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textMail"
+	    android:layout_below="@+id/textPhoneHint"
+	    android:background="@drawable/cbutton_1"
+	    android:gravity="center"
+	    android:text="textPhone"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<TextView
+	    android:id="@+id/textResponseHint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/textPhone"
+	    android:layout_centerHorizontal="true"
+	    android:text="@string/response_hint"
+	    android:textColor="@android:color/white" />
+
+	<EditText
+	    android:id="@+id/editResponse"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/buttonSend"
+	    android:layout_below="@+id/textResponseHint"
+	    android:background="@android:color/white"
+	    android:inputType="textMultiLine" >
+
+	    <requestFocus />
+	</EditText>
+
+	<Button
+	    android:id="@+id/buttonSend"
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/cbutton_3"
+	    android:text="@string/send_button"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
